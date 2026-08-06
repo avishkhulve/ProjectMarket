@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProjectHub - Student Project Marketplace</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h1>🚀 ProjectHub</h1>
+<p>Buy • Sell • Learn • Earn</p>
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">Projects</a>
+
+<a href="#">Categories</a>
+
+<a href="#">Upload</a>
+
+<a href="#">About</a>
+
+<a href="#">Contact</a>
+
+<button class="login">Login</button>
+
+<button class="signup">Sign Up</button>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Turn Your School Projects Into Money 💰</h1>
+
+<p>
+Upload your projects, earn money, inspire students and
+learn from others.
+</p>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchBox"
+placeholder="Search Smart Car, Volcano, Robot..."
+>
+
+<button onclick="searchProject()">Search</button>
+
+</div>
+
+</section>
+
+<section class="categories">
+
+<h2>Categories</h2>
+
+<div class="category-list">
+
+<button>🤖 Robotics</button>
+
+<button>🔬 Science</button>
+
+<button>⚡ Electronics</button>
+
+<button>🌱 Environment</button>
+
+<button>🎨 Art & Craft</button>
+
+<button>💻 Coding</button>
+
+<button>🏠 Home Models</button>
+
+<button>🚗 Automobile</button>
+
+</div>
+
+</section>
+
+<h2 class="heading">
+🔥 Trending Projects
+</h2>
+
+<section class="projects">
+
+<div class="card">
+
+<img src="images/smartcar.jpg">
+
+<h2>Bluetooth Smart Car</h2>
+
+<p class="student">
+👤 Made by Avish
+</p>
+
+<p>
+Bluetooth controlled robotic car using Arduino.
+</p>
+
+<p class="price">
+₹500
+</p>
+
+<p class="rating">
+⭐⭐⭐⭐⭐ 4.9 (150 Reviews)
+</p>
+
+<button onclick="watchVideo('Smart Car')">
+▶ Watch Video
+</button>
+
+<button onclick="buyProject('Smart Car')">
+🛒 Buy Now
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/volcano.jpg">
+
+<h2>Science Volcano</h2>
+
+<p class="student">
+👤 Made by Riya
+</p>
+
+<p>
+Amazing volcano eruption experiment.
+</p>
+
+<p class="price">
+₹300
+</p>
+
+<p class="rating">
+⭐⭐⭐⭐☆ 4.8
+</p>
+
+<button onclick="watchVideo('Volcano')">
+▶ Watch Video
+</button>
+
+<button onclick="buyProject('Science Volcano')">
+🛒 Buy Now
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/robot.jpg">
+
+<h2>Bluetooth Robot</h2>
+
+<p class="student">
+👤 Made by Arjun
+</p>
+
+<p>
+Obstacle avoiding robot with Arduino.
+</p>
+
+<p class="price">
+₹700
+</p>
+
+<p class="rating">
+⭐⭐⭐⭐⭐ 5.0
+</p>
+
+<button onclick="watchVideo('Robot')">
+▶ Watch Video
+</button>
+
+<button onclick="buyProject('Bluetooth Robot')">
+🛒 Buy Now
+</button>
+
+</div>
+<div class="card">
+
+<img src="images/drone.jpg">
+
+<h2>Mini Drone</h2>
+
+<p class="student">
+👤 Made by Rahul
+</p>
+
+<p>
+DIY mini drone for school exhibition.
+</p>
+
+<p class="price">
+₹1200
+</p>
+
+<p class="rating">
+⭐⭐⭐⭐⭐ 4.9
+</p>
+
+<button onclick="watchVideo('Mini Drone')">
+▶ Watch Video
+</button>
+
+<button onclick="buyProject('Mini Drone')">
+🛒 Buy Now
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/windmill.jpg">
+
+<h2>Windmill Generator</h2>
+
+<p class="student">
+👤 Made by Sneha
+</p>
+
+<p>
+Generate electricity using wind energy.
+</p>
+
+<p class="price">
+₹450
+</p>
+
+<p class="rating">
+⭐⭐⭐⭐⭐ 5.0
+</p>
+
+<button onclick="watchVideo('Windmill Generator')">
+▶ Watch Video
+</button>
+
+<button onclick="buyProject('Windmill Generator')">
+🛒 Buy Now
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/bridge.jpg">
+
+<h2>Bridge Model</h2>
+
+<p class="student">
+👤 Made by Karan
+</p>
+
+<p>
+Strong bridge using ice-cream sticks.
+</p>
+
+<p class="price">
+₹350
+</p>
+
+<p class="rating">
+⭐⭐⭐⭐⭐ 4.8
+</p>
+
+<button onclick="watchVideo('Bridge Model')">
+▶ Watch Video
+</button>
+
+<button onclick="buyProject('Bridge Model')">
+🛒 Buy Now
+</button>
+
+</div>
+
+</section>
+
+<section class="upload">
+
+<h2>📤 Upload Your Project</h2>
+
+<input type="text" placeholder="Your Name">
+
+<input type="text" placeholder="School Name">
+
+<input type="text" placeholder="Project Title">
+
+<input type="number" placeholder="Project Price">
+
+<textarea placeholder="Describe your project"></textarea>
+
+<input type="file">
+
+<input type="file">
+
+<button>
+Upload Project
+</button>
+
+</section>
+
+<section class="reviews">
+
+<h2>⭐ Student Reviews</h2>
+
+<div class="review">
+
+<h3>Priya ⭐⭐⭐⭐⭐</h3>
+
+<p>
+Amazing website! I sold my science project in just two days.
+</p>
+
+</div>
+
+<div class="review">
+
+<h3>Rohan ⭐⭐⭐⭐⭐</h3>
+
+<p>
+Very easy to upload and buy projects.
+</p>
+
+</div>
+
+<div class="review">
+
+<h3>Aman ⭐⭐⭐⭐☆</h3>
+
+<p>
+I found excellent robotics ideas here.
+</p>
+
+</div>
+
+</section>
+
+<section class="newsletter">
+
+<h2>Stay Updated</h2>
+
+<p>
+Get notifications about new projects.
+</p>
+
+<input type="email" placeholder="Enter your email">
+
+<button>
+Subscribe
+</button>
+
+</section>
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-box">
+<h2>🚀 ProjectHub</h2>
+<p>
+India's Student Project Marketplace.
+Buy, Sell, Learn and Earn.
+</p>
+</div>
+
+<div class="footer-box">
+<h3>Quick Links</h3>
+
+<p><a href="#">Home</a></p>
+<p><a href="#">Projects</a></p>
+<p><a href="#">Upload Project</a></p>
+<p><a href="#">Categories</a></p>
+<p><a href="#">About Us</a></p>
+</div>
+
+<div class="footer-box">
+<h3>Contact</h3>
+
+<p>📧 support@projecthub.com</p>
+<p>📱 +91 9876543210</p>
+<p>📍 India</p>
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+© 2026 ProjectHub. All Rights Reserved.
+Made for Students ❤️
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

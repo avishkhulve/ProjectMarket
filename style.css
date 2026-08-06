@@ -1,0 +1,323 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(90deg,#007bff,#00c6ff);
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.logo h1{
+    font-size:36px;
+}
+
+.logo p{
+    margin-top:5px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.login,
+.signup{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-left:10px;
+    font-weight:bold;
+}
+
+.login{
+    background:white;
+    color:#007bff;
+}
+
+.signup{
+    background:orange;
+    color:white;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(to right,#6dd5fa,#2980b9);
+    color:white;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.search-box input{
+    width:350px;
+    max-width:90%;
+    padding:12px;
+    border-radius:8px;
+    border:none;
+    font-size:16px;
+}
+
+.search-box button{
+    padding:12px 25px;
+    background:orange;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+.categories{
+    text-align:center;
+    padding:40px;
+}
+
+.category-list button{
+    margin:10px;
+    padding:12px 20px;
+    border:none;
+    border-radius:25px;
+    background:#007bff;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.category-list button:hover{
+    background:orange;
+}
+.heading{
+    text-align:center;
+    font-size:35px;
+    margin-top:40px;
+    margin-bottom:30px;
+    color:#007bff;
+}
+
+.projects{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:20px;
+}
+
+.card{
+    width:320px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+    text-align:center;
+    padding-bottom:20px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h2{
+    margin-top:15px;
+    color:#007bff;
+}
+
+.student{
+    color:#666;
+    margin:10px;
+}
+
+.price{
+    font-size:28px;
+    color:green;
+    font-weight:bold;
+    margin:10px;
+}
+
+.rating{
+    color:orange;
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.card button{
+    width:85%;
+    padding:12px;
+    margin:8px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    background:#007bff;
+    color:white;
+    transition:0.3s;
+}
+
+.card button:hover{
+    background:orange;
+}
+
+.upload{
+    width:90%;
+    max-width:700px;
+    margin:60px auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.upload h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#007bff;
+}
+
+.upload input,
+.upload textarea{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.upload button{
+    width:100%;
+    padding:14px;
+    background:#28a745;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.upload button:hover{
+    background:#218838;
+}
+.reviews{
+    width:90%;
+    margin:60px auto;
+    text-align:center;
+}
+
+.review{
+    background:white;
+    margin:20px auto;
+    max-width:700px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.newsletter{
+    background:#007bff;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.newsletter h2{
+    margin-bottom:15px;
+}
+
+.newsletter input{
+    width:320px;
+    max-width:90%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+.newsletter button{
+    padding:12px 25px;
+    background:orange;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    margin-top:50px;
+    padding:40px 20px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.footer-box{
+    width:250px;
+}
+
+.footer-box h2,
+.footer-box h3{
+    margin-bottom:15px;
+}
+
+.footer-box a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-box a:hover{
+    color:orange;
+}
+
+.copyright{
+    text-align:center;
+    margin-top:30px;
+}
+
+button:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+html{
+    scroll-behavior:smooth;
+}
